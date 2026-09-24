@@ -1,0 +1,200 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Playpen Sans Thai", cursive;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+
+    background-color: var(--background-color);
+}
+html{
+    scroll-behavior: smooth;
+}
+.container {
+    width: 100%;
+    margin: 0;
+    padding: 2rem 0;
+    overflow: hidden;
+}
+
+/* --------------color------------- */
+:root {
+    /* text color */
+    --text-primary-color: #423830;
+    --text-secondary-color: #100535;
+    --text-white-color: #ffffff;
+    --text-mute-color: #7e726a;
+
+    /* background color */
+    --background-color: #f1d8ff;
+    --background-header-color: #fffee8;
+    --background-footer-color: #9b5ab4;
+
+    /* shadow color */
+    --shadow-color: 0 4px 8px #8f8f8f;
+
+    /* border color */
+    --border-color: 1px solid #686868;
+    --border-img: 10px solid #fffee8;
+    --border-icon-img: 2px solid #686868;
+}
+
+
+/* --------------------------------------
+            Header Section
+----------------------------------------- */
+header {
+    color: var(--text-primary-color);
+    background-color: var(--background-header-color);
+    padding: 2rem;
+
+    border: var(--border-color);
+    border-bottom-left-radius: 3rem;
+    border-bottom-right-radius: 3rem;
+    box-shadow: var(--shadow-color);
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-logo {
+    padding-left: 2rem;
+    margin: 0.5rem;
+    font-weight: bold;
+    font-size: 22px;
+}
+
+
+/* ------------nav bar----------- */
+.nav a {
+    text-decoration: none;
+    color: var(--text-primary-color);
+    
+    font-size: 18px;
+    padding: 1rem;
+    margin-right: 1rem;
+
+    text-align: center;
+    align-items: center;
+
+    border: var(--border-color);
+    box-shadow: var(--shadow-color);
+    border-radius: 999px;
+
+    display: inline-block;
+    transition: transform 0.5s;
+}
+
+.nav a:hover {
+    transform: translateY(-10px);
+    background-color: var(--background-color);
+}
+
+.select-page{
+    background-color: var(--background-color);
+}
+
+/* ============================================== */
+
+/* --------------------------------------
+            Main Section
+----------------------------------------- */
+
+/* For Every Page */
+.page-title{
+    align-items: center;
+    padding: 1rem;
+    font-size: 28px;
+    font-weight: bold;
+
+    border: var(--border-color);
+    background-color: var(--text-white-color);
+    margin: 0.25rem 0.5rem;
+    border-radius: 1rem;
+    margin-bottom: 1rem;
+}
+
+.btn-page{
+    display: flex;
+    gap: 2rem;
+    justify-content: space-between;
+    padding: 0.5rem 2rem 0;
+}
+.next-page a{
+    text-decoration: none;
+    font-size: 34px;
+    
+    color: var(--text-primary-color);
+    background-color: var(--background-header-color);
+    padding: 1rem;
+
+    text-align: center;
+    align-items: center;
+
+    border: var(--border-color);
+    box-shadow: var(--shadow-color);
+    border-radius: 999px;
+
+    display: inline-flex;
+    transition: transform 0.5s;
+}
+.next-page a:hover{
+    transform: translateY(-10px);
+}
+.before-page a{
+    text-decoration: none;
+    font-size: 34px;
+    
+    color: var(--text-primary-color);
+    background-color: var(--background-header-color);
+    padding: 1rem;
+
+    text-align: center;
+    align-items: center;
+
+    border: var(--border-color);
+    box-shadow: var(--shadow-color);
+    border-radius: 999px;
+
+    display: inline-flex;
+    transition: transform 0.5s;
+}
+.before-page a:hover{
+    transform: translateY(-10px);
+}
+
+/* --------------------------------------
+            Footer Section
+----------------------------------------- */
+.footer {
+    font-size: 20px;
+    align-items: center;
+    text-align: center;
+
+    color: var(--text-primary-color);
+    background-color: var(--background-header-color);
+    padding: 1.5rem;
+    margin-top: 0.5rem;
+
+    border: var(--border-color);
+    border-radius: 3rem;
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: 10% 80% 10%;
+    gap: 2rem;
+    align-items: center;
+}
+
+.footer-grid i {
+    font-size: 40px;
+}
