@@ -1,22 +1,24 @@
 /* About Page */
-.about-page{
+.about-page {
     display: grid;
     grid-template-columns: 3fr 2fr;
     gap: 1rem;
-    
+
     border: var(--border-color);
     border-radius: 1rem;
     margin: 0 2rem;
     background-color: var(--text-white-color);
 }
-.about-img{
+
+.about-img {
     display: flex;
     justify-content: center;
     align-items: top;
     text-align: center;
     padding-top: 4rem;
 }
-.about-page img{
+
+.about-page img {
     max-width: 700px;
     max-height: 700px;
 
@@ -26,13 +28,18 @@
 
     object-fit: cover;
 }
-.about-info li{
+
+.about-info li {
     list-style: none;
     margin-left: 2rem;
     font-size: 18px;
     padding-bottom: 1rem;
 }
-.personal-info ,.education ,.experience ,.goals{
+
+.personal-info,
+.education,
+.experience,
+.goals {
     background-color: var(--background-header-color);
     border: var(--border-color);
     border-radius: 2rem;
@@ -41,7 +48,11 @@
     margin: 2rem 5rem;
     padding: 1rem;
 }
-.personal-info h3 ,.education h3 , .experience h3 ,.goals h3{
+
+.personal-info h3,
+.education h3,
+.experience h3,
+.goals h3 {
     font-weight: bold;
     font-size: 24px;
     text-align: center;
@@ -53,11 +64,27 @@
     border-radius: 1rem;
     margin-bottom: 1rem;
 }
-.title-info-about{
+
+.title-info-about {
     border: var(--border-color);
     background-color: var(--text-white-color);
     padding: 0.25rem 1rem;
     margin: 0.25rem;
     border-radius: 1rem;
 
+}
+
+/* ---------------------------------
+            Responsive
+---------------------------------- */
+@media (max-width:1280px) {
+    .about-page {
+        display: inline-block;
+        padding: 2rem
+    }
+
+    .about-page img {
+        max-width: 500px;
+        max-height: 500px;
+    }
 }

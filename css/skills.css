@@ -1,12 +1,13 @@
 /* Skill Page */
-.skills-page{
+.skills-page {
     display: grid;
-    grid-template-columns: repeat(4,1fr);
+    grid-template-columns: repeat(4, 1fr);
     gap: 2rem;
 
     padding: 2rem 5rem;
 }
-.skill-card{
+
+.skill-card {
     border: var(--border-color);
     background-color: var(--background-header-color);
     padding: 0.25rem 2rem;
@@ -15,10 +16,12 @@
     box-shadow: var(--shadow-color);
     transition: transform 0.5s;
 }
-.skill-card:hover{
+
+.skill-card:hover {
     transform: translateY(-10px);
 }
-.skill-img img{
+
+.skill-img img {
     max-width: 90px;
     max-height: 90px;
     object-fit: cover;
@@ -26,26 +29,63 @@
     border: var(--border-icon-img);
     border-radius: 2rem;
 }
-.skill-img{
+
+.skill-img {
     text-align: center;
     margin: 1rem;
 }
-.hard-skills , .design-skills ,.soft-skills,.optional-skills{
+
+.hard-skills,
+.design-skills,
+.soft-skills,
+.optional-skills {
     margin: 1rem 0 2rem;
 }
-.hard-skills h3,.design-skills h3,.soft-skills h3,.optional-skills h3{
+
+.hard-skills h3,
+.design-skills h3,
+.soft-skills h3,
+.optional-skills h3 {
     font-weight: bold;
     font-size: 20px;
     padding: 1rem 0.5rem;
     margin: 0 0.25rem;
     text-align: center;
-    
+
     background-color: var(--text-white-color);
     border: var(--border-color);
     border-radius: 1rem;
 }
-.hard-skills ul li,.design-skills ul li,.soft-skills ul li,.optional-skills ul li{
+
+.hard-skills ul li,
+.design-skills ul li,
+.soft-skills ul li,
+.optional-skills ul li {
     list-style-type: none;
     font-size: 18px;
     padding: 0 1.5rem 1rem;
+}
+
+/* ---------------------------------
+            Responsive
+---------------------------------- */
+@media (max-width:1280px) {
+    .skills-page {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 0.5rem;
+    }
+}
+
+@media (max-width:768px) {
+    .skills-page {
+        display: inline-block;
+        gap: 0.5rem;
+    }
+    .skills-page{
+        padding: 2rem;
+    }
+    .skill-card{
+        margin-bottom: 2rem;
+    }
 }
