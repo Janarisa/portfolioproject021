@@ -12,9 +12,11 @@ body {
 
     background-color: var(--background-color);
 }
-html{
+
+html {
     scroll-behavior: smooth;
 }
+
 .container {
     width: 100%;
     margin: 0;
@@ -77,7 +79,7 @@ header {
 .nav a {
     text-decoration: none;
     color: var(--text-primary-color);
-    
+
     font-size: 18px;
     padding: 1rem;
     margin-right: 1rem;
@@ -98,7 +100,7 @@ header {
     background-color: var(--background-color);
 }
 
-.select-page{
+.select-page {
     background-color: var(--background-color);
 }
 
@@ -109,7 +111,7 @@ header {
 ----------------------------------------- */
 
 /* For Every Page */
-.page-title{
+.page-title {
     align-items: center;
     padding: 1rem;
     font-size: 28px;
@@ -122,16 +124,17 @@ header {
     margin-bottom: 1rem;
 }
 
-.btn-page{
+.btn-page {
     display: flex;
     gap: 2rem;
     justify-content: space-between;
     padding: 0.5rem 2rem 0;
 }
-.next-page a{
+
+.next-page a {
     text-decoration: none;
     font-size: 34px;
-    
+
     color: var(--text-primary-color);
     background-color: var(--background-header-color);
     padding: 1rem;
@@ -146,13 +149,15 @@ header {
     display: inline-flex;
     transition: transform 0.5s;
 }
-.next-page a:hover{
+
+.next-page a:hover {
     transform: translateY(-10px);
 }
-.before-page a{
+
+.before-page a {
     text-decoration: none;
     font-size: 34px;
-    
+
     color: var(--text-primary-color);
     background-color: var(--background-header-color);
     padding: 1rem;
@@ -167,7 +172,8 @@ header {
     display: inline-flex;
     transition: transform 0.5s;
 }
-.before-page a:hover{
+
+.before-page a:hover {
     transform: translateY(-10px);
 }
 
@@ -197,4 +203,24 @@ header {
 
 .footer-grid i {
     font-size: 40px;
+}
+
+@media (max-width:768px) {
+    header {
+        display: inline-flex;
+    }
+}
+
+@media (max-width:576px) {
+    body {
+        font-size: 12px;
+    }
+
+    .header-logo {
+        font-size: 18px;
+    }
+
+    .page-title {
+        font-size: 18px;
+    }
 }

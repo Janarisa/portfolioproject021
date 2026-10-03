@@ -82,3 +82,25 @@
         display: inline-block;
     }
 }
+
+@media (max-width:768px) {
+    .profile-img img {
+        max-width: 500px;
+        max-height: 500px;
+    }
+}
+
+@media (max-width:576px) {
+    .profile-img img {
+        max-width: 300px;
+        max-height: 300px;
+    }
+
+    .title-text {
+        font-size: 16px;
+    }
+
+    .present-text {
+        font-size: 14px;
+    }
+}

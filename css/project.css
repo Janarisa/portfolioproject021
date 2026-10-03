@@ -79,6 +79,7 @@
         display: inline-block;
         margin-bottom: 3rem
     }
+
     .main {
         padding: 1rem;
         margin: 1rem;
@@ -89,4 +90,18 @@
     .card-img img {
         max-width: 500px;
     }
+}
+
+@media (max-width:576px) {
+    .card {
+        padding: 1rem;
+        margin: 1rem;
+    }
+
+    .card-img img {
+        max-width: 300px;
+    }
+    .card-text {
+    margin: 0.25rem;
+}
 }

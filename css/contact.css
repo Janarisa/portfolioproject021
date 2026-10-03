@@ -212,7 +212,30 @@
 
 @media(max-width:768px) {
     .link-grid {
-        display: inline-block;
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
         justify-content: center;
+        gap: 0.2rem;
     }
+}
+@media(max-width:576px) {
+    .contact-img img {
+    max-width: 300px;
+    max-height: 300px;
+}
+.right-bar {
+    padding: 1rem 0.25rem;
+    margin: 2rem 0.25rem;
+}
+.contact-form {
+    font-size: 14px;
+    padding: 2rem 0.25rem 0.5rem;
+    margin: 0;
+    text-align: center;
+}
+.social-links {
+    font-size: 12px;
+    padding: 2rem 0.1rem 1rem;
+    margin-top: 2rem;
+}
 }
